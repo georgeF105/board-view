@@ -1,5 +1,6 @@
 import React from 'react'
 import db from '../data/db'
+import BoardPreview from './BoardPreview'
 
 
 export class Boards extends React.Component {
@@ -30,7 +31,9 @@ export class Boards extends React.Component {
 	    			<h1>Boards</h1>
 	    		</div>
 	    	</div>
-	    	
+    		<div className="container">
+	    		{this.state.boards ? this.state.boards.map(function(item, key){return <BoardPreview {...item} key={key} />}) : <h3>No Boards Found</h3>}
+	    	</div>
 	    </div>
     )
   }
