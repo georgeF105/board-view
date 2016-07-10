@@ -2,6 +2,13 @@ import React from 'react'
 
 export default React.createClass({
   render() {
-    return <div>Footer</div>
+    return (
+    	<div className="container">
+	    	<hr/>
+	    	<footer>
+	    	  <p>&copy; A Project...</p>
+	    	</footer>
+    	</div>
+    )
   }
 })
