@@ -13,7 +13,7 @@ const INITAL_STATE = fromJS({
 		'2':{name: 'George'}
 	},
 	user:{
-		id:0, name:'GuestXX', loggedIn: false
+		id:0, userName:'Guest', loggedIn: false
 	}
 })
 
