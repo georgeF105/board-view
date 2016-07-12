@@ -11,6 +11,9 @@ const INITAL_STATE = fromJS({
 		'0':{name: 'Example Boards'},
 		'1':{name: 'Jack'},
 		'2':{name: 'George'}
+	},
+	user:{
+		id:0, name:'GuestXX', loggedIn: false
 	}
 })
 

@@ -27,7 +27,7 @@ export class Navbar extends React.Component {
     	        <span className="icon-bar"></span>
     	        <span className="icon-bar"></span>
     	      </button>
-    	      <a className="navbar-brand" href="/">{this.props.title}</a>
+    	      <a className="navbar-brand" href="/">Surfatron</a>
     	    </div>
     	    <div id="navbar" className="navbar-collapse collapse">
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import NavLink from './NavLink'
-import Navbar from './Navbar'
+import NavBarContainer from './containers/NavBarContainer'
 import Footer from './Footer'
 import routes from './routes'
 
@@ -8,7 +8,7 @@ export default React.createClass({
   render() {
     return (
       <div>
-        <Navbar title="Surfatron" userName="Guest" />
+        <NavBarContainer />
         <div id='main'>{routes}</div>
         <Footer />
       </div>
