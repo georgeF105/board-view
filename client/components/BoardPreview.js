@@ -1,5 +1,5 @@
 import React from 'react'
-import db from '../data/db'
+import db from '../../data/db'
 
 
 export class Boards extends React.Component {
