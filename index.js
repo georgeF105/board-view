@@ -1,12 +1,15 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
-import App from './client/App'
-import Boards from './client/Boards'
-import Home from './client/Home'
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+import reducer from './client/reducer';
+import App from './client/components/App'
+
+const store = createStore(reducer)
 
 render((
-  <div>
+  <Provider store={store}>
   	<App />
-  </div>
+  </Provider>
 ), document.getElementById('app'))
