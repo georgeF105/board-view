@@ -4,13 +4,12 @@ export default (props) => {
 	const login = (event) => {
 		event.preventDefault()
 		console.log('trying to login', document.getElementById("login-form"))
-		props.setState({loggedIn: true})
-		document.getElementById("login-form")
+		props.logIn(document.getElementById('email-input').value,document.getElementById('password-input').value)
 	}
 	const logOut = (event) => {
 		console.log('trying to logout', event)
 		event.preventDefault()
-		props.setState({loggedIn: false})
+		props.logOut()
 	}
   return (
   	<nav className="navbar navbar-inverse navbar-fixed-top">
@@ -30,10 +29,10 @@ export default (props) => {
   	      <form id="login-form" className="navbar-form navbar-right">
   	        <a id="user-name" className="navbar-username" href="#">{props.NavBarInfo.userName}</a>
   	        	<div className="form-group">
-    	          <input type="text" placeholder="Email" name="email" className="form-control"/>
+    	          <input id="email-input" type="text" placeholder="Email" name="email" className="form-control"/>
     	        </div>
     	        <div className="form-group">
-    	          <input type="password" placeholder="Password" name="password" className="form-control"/>
+    	          <input id="password-input" type="password" placeholder="Password" name="password" className="form-control"/>
     	        </div>
     	        <button type="submit" className="btn" onClick={login}>Sign in</button>
   	      </form>

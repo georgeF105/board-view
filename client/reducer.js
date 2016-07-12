@@ -21,6 +21,8 @@ export default (state = INITAL_STATE, action) => {
 	switch(action.type) {
 		case 'LOGIN':
 			console.log('LOGIN Action Called')
+			console.log('Email',action.email)
+			console.log('password',action.password)
 			return state
 		default:
 			console.log('action.type not known', action.type)
