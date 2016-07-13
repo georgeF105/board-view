@@ -1,6 +1,6 @@
 import React from 'react'
 import db from '../../data/db'
-
+import { Link } from 'react-router'
 
 export class Boards extends React.Component {
 	constructor (props) {
@@ -23,8 +23,9 @@ export class Boards extends React.Component {
     		    <p> Some other info ...</p>
     		  </div>
     		  <div className="col-md-3">
-    		    <p><a className="btn btn-default" href="#" role="button">Send to device</a></p>
-    		    <p><a className="btn btn-default" href="#" role="button">Edit board</a></p>
+                <p><Link className="btn btn-default" to={`/boards/${this.props.id}`} role="button">View board</Link></p>
+                <p><a className="btn btn-default" href="#" role="button">Send to device</a></p>
+                <p><a className="btn btn-default" href="#" role="button">Edit board</a></p>
     		  </div>
     		</div>
     	</div>
