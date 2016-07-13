@@ -1,12 +1,12 @@
 import {fromJS} from 'immutable'
 
 const INITAL_STATE = fromJS({
-	surfboards: {
-		'0':{name:'Rods Board',points:[9, 35, 52, 61, 64, 61, 47, 13, 0, 0],created:'2016-05-01',owner:1},
-		'1':{name:'Test Board',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:2},
-		'2':{name:'Test Board',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:0},
-		'3':{name:'Test Board',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:0}
-	},
+	surfboards: [
+		{id:0,name:'Rods Board',points:[9, 35, 52, 61, 64, 61, 47, 13, 0, 0],created:'2016-05-01',owner:1},
+		{id:1,name:'Test Board',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:2},
+		{id:2,name:'Test Board',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:0},
+		{id:3,name:'Test Board',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:0}
+	],
 	users: {
 		'0':{name: 'Example Boards'},
 		'1':{name: 'Jack'},
