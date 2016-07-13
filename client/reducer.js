@@ -2,10 +2,10 @@ import {fromJS} from 'immutable'
 
 const INITAL_STATE = fromJS({
 	surfboards: [
-		{id:0,name:'Jacks Board',points:[9, 35, 52, 61, 64, 61, 47, 13, 0, 0],created:'2016-05-01',owner:1},
-		{id:1,name:'Georges Board',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:2},
-		{id:2,name:'Example Board One',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:0},
-		{id:3,name:'Example Board Two',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:0}
+		// {id:0,name:'Jacks Board',points:[9, 35, 52, 61, 64, 61, 47, 13, 0, 0],created:'2016-05-01',owner:1},
+		// {id:1,name:'Georges Board',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:2},
+		// {id:2,name:'Example Board One',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:0},
+		// {id:3,name:'Example Board Two',points:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],created:'2016-05-01',owner:0}
 	],
 	users: {
 		'0':{name: 'Example Boards'},
@@ -29,7 +29,8 @@ export default (state = INITAL_STATE, action) => {
 			return state
 		case 'RECEIVE_BOARDS':
 			console.log('RECEIVE_BOARDS',action.list)
-			return state
+
+			return state.set('surfboards', state.get('surfboards').concat(action.list))
 		default:
 			console.log('action.type not known', action.type)
 			return state
