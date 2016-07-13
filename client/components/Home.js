@@ -9,7 +9,7 @@ export default React.createClass({
         	  <div className="container">
         	    <h1>Surfboard Jig</h1>
         	    <p>A website for... a quick desctription about what the website is all about.. and some other marketing words...</p>
-        	    <p><Link className="btn btn-primary btn-lg" to="/boards" role="button">Checkout examples &raquo;</Link></p>
+        	    <p><Link className="btn btn-primary btn-lg" to="/boards/examples" role="button">Checkout examples &raquo;</Link></p>
         	  </div>
         	</div>
             <div className="container">
