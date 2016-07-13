@@ -24,6 +24,12 @@ export default (state = INITAL_STATE, action) => {
 			console.log('Email',action.email)
 			console.log('password',action.password)
 			return state
+		case 'REQUEST_BOARDS':
+			console.log('REQUEST_BOARDS')
+			return state
+		case 'RECEIVE_BOARDS':
+			console.log('RECEIVE_BOARDS',action.list)
+			return state
 		default:
 			console.log('action.type not known', action.type)
 			return state
