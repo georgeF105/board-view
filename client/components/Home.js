@@ -24,7 +24,7 @@ export default React.createClass({
                   <h2>Existing boards</h2>
                   <p>Open existing board CAM info</p>
                   <p><Link className="btn btn-default" to="/boards" role="button">Open my boards</Link></p>
-                  <p><Link className="btn btn-default" to="/boards" role="button">Checkout examples</Link></p>
+                  <p><Link className="btn btn-default" to="/boards/examples" role="button">Checkout examples</Link></p>
                 </div>
               </div>
             </div>

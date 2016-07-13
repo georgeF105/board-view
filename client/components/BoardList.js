@@ -9,7 +9,7 @@ export default (props) => {
   	<div>
     	<div className="jumbotron">
     		<div className="container">
-    			<h1>Boards</h1>
+    			<h1>{props.title}</h1>
     		</div>
     	</div>
   		<div className="container">
